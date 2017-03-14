@@ -7,7 +7,7 @@
  * user guide available at https://docs.gradle.org/2.10/userguide/tutorial_java_projects.html
  */
 
-/*
+
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -23,6 +23,14 @@ repositories {
 dependencies {
     // The production code uses the SLF4J logging API at compile time
     compile 'org.slf4j:slf4j-api:1.7.13'
+    
+    // https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch
+	compile group: 'org.elasticsearch', name: 'elasticsearch', version: '5.2.2'
+	
+	compile group: 'org.elasticsearch.client', name: 'transport', version: '5.2.2'
+	
+	compile group: 'org.apache.logging.log4j', name: 'log4j-to-slf4j', version: '2.7'
+    
 
     // Declare the dependency for your favourite test framework you want to use in your tests.
     // TestNG is also supported by the Gradle Test task. Just change the
@@ -30,4 +38,4 @@ dependencies {
     // 'test.useTestNG()' to your build script.
     testCompile 'junit:junit:4.12'
 }
-*/
+
